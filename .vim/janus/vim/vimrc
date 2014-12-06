@@ -36,3 +36,11 @@ exe 'source ' . g:janus_vim_path . '/core/plugins.vim'
 call janus#load_pathogen()
 
 " .vimrc.after is loaded after the plugins have loaded
+let g:Powerline_symbols = 'fancy'
+
+
+" my settings
+let g:dbgPavimPort = 9000
+let g:dbgPavimBreakAtEntry = 0
+let g:dbgPavimRun = '<F6>'
+"

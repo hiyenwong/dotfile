@@ -10,3 +10,4 @@ endif
 if filereadable(expand("~/.gvimrc.after"))
   source ~/.gvimrc.after
 endif
+let g:Powerline_symbols = 'fancy'
