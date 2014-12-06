@@ -8,7 +8,7 @@ let g:janus_vim_path = escape(fnamemodify(resolve(expand("<sfile>:p" . "vim")), 
 let g:janus_custom_path = expand("~/.janus")
 
 " Source janus's core
-exe 'source ' . g:janus_vim_path . '/core/before/plugin/janus.vim'
+exe 'source ' . g:janus_vim_path . '/.vim/janus/vim/core/before/plugin/janus.vim'
 
 " You should note that groups will be processed by Pathogen in reverse
 " order they were added.
@@ -26,7 +26,7 @@ endif
 
 
 " Disable plugins prior to loading pathogen
-exe 'source ' . g:janus_vim_path . '/core/plugins.vim'
+exe 'source ' . g:janus_vim_path . '/.vim/janus/vim/core/plugins.vim'
 
 ""
 "" Pathogen setup
@@ -36,3 +36,5 @@ exe 'source ' . g:janus_vim_path . '/core/plugins.vim'
 call janus#load_pathogen()
 
 " .vimrc.after is loaded after the plugins have loaded
+"
+let g:Powerline_symbols = 'fancy'
