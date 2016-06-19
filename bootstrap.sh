@@ -26,15 +26,15 @@ rake || die "Rake failed."
 echo 'color molokai' >> "${HOME}/.gvimrc.after"
 
 # install powerline
-git "clone" "git@github.com:Lokaltog/vim-powerline.git" "${HOME}/.janus/powerline" || die "can't clone powerline"
+git "clone" "https://github.com/powerline/powerline.git" "${HOME}/.janus/powerline" || die "can't clone powerline"
 echo "let g:Powerline_symbols = 'fancy'" >> "${HOME}/.vimrc" || die "cant add powerline"
 
 #install supertab
-git "clone" "git@github.com:ervandew/supertab.git" "${HOME}/.janus/supertab" || die "can't clone supertab"
+git "clone" "https://github.com/ervandew/supertab.git" "${HOME}/.janus/supertab" || die "can't clone supertab"
 echo "let g:SuperTabDefaultCompletionType = \"<c-x><c-n>\"" >> "${HOME}/.vimrc"
 
 #install vim-rails
 #https://github.com/tpope/vim-rails
-git "clone" "git clone git://github.com/tpope/vim-rails.git" "${HOME}/.janus/vim-rails" ||die "can't clone vim-rails"
+git "clone" "https://github.com/tpope/vim-rails.git" "${HOME}/.janus/vim-rails" ||die "can't clone vim-rails"
 #install vim-bundler
-git "clone" "git://github.com/tpope/vim-bundler.git" "${HOME}/.janus/vim-bundler" || die "can't clone vim-bundler"
+git "clone" "https://github.com/tpope/vim-bundler.git" "${HOME}/.janus/vim-bundler" || die "can't clone vim-bundler"
